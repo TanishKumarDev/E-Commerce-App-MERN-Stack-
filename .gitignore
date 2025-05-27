@@ -54,3 +54,5 @@ coverage/
 
 # Optional React Native files
 .expo-shared/
+
+.vercel
