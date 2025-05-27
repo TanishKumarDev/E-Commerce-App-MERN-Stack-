@@ -21,25 +21,6 @@ const HomePage = () => {
 					bgGradient={"linear(to-r, cyan.400, blue.500)"}
 					bgClip={"text"}
 					textAlign={"center"}
-					letterSpacing={"wide"}
-					lineHeight={"shorter"}
-					transition={"all 0.3s ease-in-out"}
-					_hover={{
-						transform: "scale(1.05)",
-						bgGradient: "linear(to-r, blue.500, cyan.400)",
-					}}
-					mb={14}
-					// color='gray.800'
-					shadow='md'
-					p={2}
-					borderRadius='md'
-					border='3px solid'
-					borderStyle='solid'
-
-					radius='md'
-					borderColor='gray.200'
-					
-					
 				>
 					Current Products 🚀
 				</Text>
@@ -59,10 +40,10 @@ const HomePage = () => {
 				</SimpleGrid>
 
 				{products.length === 0 && (
-					<Text fontSize='xl' textAlign={"center"} fontWeight='bold' color='gray.5000' mt={50}>
+					<Text fontSize='xl' textAlign={"center"} fontWeight='bold' color='gray.500'>
 						No products found 😢{" "}
 						<Link to={"/create"}>
-							<Text as='span' color='blue.500' _hover={{ textDecoration: "underline" , cursor: "pointer" }}>
+							<Text as='span' color='blue.500' _hover={{ textDecoration: "underline" }}>
 								Create a product
 							</Text>
 						</Link>
